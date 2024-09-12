@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+
+        div{
+            margin-top: 10px;
+        }
+
+        input{
+            width: 50px;
+        }
+        input#botao{
+            width: 60px;
+            box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.534);
+        }
+
+        input#botao:hover{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="num1" id="tx1"> +
+    <input type="number" name="num2" id="tx2">
+    <input id="botao" type="button" value="Somar" onclick="somar()">
+    <div id="res">
+        Resultado
+    </div>
+    <script>
+       
+
+        function somar(){
+            var tx1 = document.getElementById('tx1')
+            var tx2 = document.getElementById('tx2')
+            var res = document.getElementById('res')
+            var num1 = Number(tx1.value)
+            var num2 = Number(tx2.value)
+            var soma = num1 + num2
+            res.innerHTML = `Resultado: <strong>${soma}<strong>`
+        }
+    </script>
+</body>
+</html>
