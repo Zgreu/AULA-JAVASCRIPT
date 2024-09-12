@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+
+        body{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        div#area{
+            width: 250px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+        }
+
+        div#area:hover{
+            color: rgb(48, 48, 48);
+            background-color: rgb(117, 117, 117);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Clique aqui
+    </div>
+    <script>
+        var area = document.getElementById('area')
+        function clicar(){
+            
+            area.style.bottom = '100px'
+            area.innerHTML = 'errou!'
+        }
+        function entrar(){
+           area.innerHTML = "só clicar"
+        }
+        function sair(){
+            area.innerHTML = "clica por favor"
+        }
+    </script>
+</body>
+</html>
