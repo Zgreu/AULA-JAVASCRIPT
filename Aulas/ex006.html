@@ -32,22 +32,24 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    <div id="area">
         Clique aqui
     </div>
     <script>
+        
         var area = document.getElementById('area')
+
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+
         function clicar(){
-            
             area.style.bottom = '100px'
             area.innerHTML = 'errou!'
         }
         function entrar(){
            area.innerHTML = "só clicar"
         }
-        function sair(){
-            area.innerHTML = "clica por favor"
-        }
+        
     </script>
 </body>
 </html>
