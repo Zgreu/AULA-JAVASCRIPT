@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 name="inicio">
+        iniciando o DOM
+    </h1>
+    <p class="texto">
+        aqui vai o resultado
+    </p>
+    <p class="texto">
+        Aprendendo <strong>DOM</strong>
+    </p>
+    <div class="msg">
+        Clique aqui
+    </div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[1]
+        var alinhamento = document.body
+        var msg = document.querySelector('div.msg')
+        var inicio = document.getElementsByName('inicio')[0]
+        var texto = document.getElementsByClassName('texto')[1]
+        
+
+
+        document.write('esta escrito assim: ' +p1.innerHTML)
+        document.write(' <br><br>esse é pelo id: '+ msg.innerHTML)
+
+        alinhamento.style.textAlign = 'center'
+        p1.style.color = 'red'
+        msg.style.backgroundColor = 'blue'
+        inicio.style.color = '#ffff9f'
+        texto.style.backgroundColor = 'white'
+    </script>
 </body>
 </html>
