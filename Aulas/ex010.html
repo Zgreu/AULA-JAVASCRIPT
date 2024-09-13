@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Quem é o amor da minha vida?</h1>
+    <input type="text" name="senha" id="senha" placeholder="escreva aqui">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        var fundo = document.getElementsByTagName('body')[0]
+        
+        function verificar() {
+            var txt = document.getElementById('senha')
+            var res = document.getElementById('res')
+            var digito = (txt.value)
+        
+           if(digito == 'Yasmin'){
+            res.innerHTML = ('<p>SIIIM está certo esse é o amor da minha vida</p>')
+            res.innerHTML += ('<p><strong>TE AMOOOOOOOOOOOOO</strong></p>')
+            res.style.fontSize = '2em'
+            fundo.style.backgroundColor = 'lightgreen'
+            
+           } else {
+            res.innerHTML = ('<p><strong>Está errado</strong></p>')
+            res.innerHTML += ('<p>tente colocar a primeira letra em Maiusculo</p>')
+            res.style.fontSize = '2em'
+            fundo.style.backgroundColor = 'rgb(253, 104, 104)'
+            
+           }
+        }
+    </script>
+</body>
+</html>
