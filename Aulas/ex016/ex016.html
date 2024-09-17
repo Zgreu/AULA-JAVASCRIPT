@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetidores</title>
+    <style>
+     body{
+        background-color: rgb(66, 189, 230);
+        font: normal 15pt arial;
+     }
+     header{
+        color: white;
+        text-align: center;
+     }
+     section{
+        background-color: white;
+        border-radius: 10px;
+
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);
+
+        padding: 10px  10px;
+        margin: auto;
+        width: 500px;
+     }
+     div input{
+        margin-top: 20px;
+        
+     }
+     div label{
+        padding-left: 20px;
+     }
+
+     div#res{
+        margin-top: 15px;
+        
+     }
+     
+    </style>
+</head>
+<body>
+   <header>
+    <h1>Vamos contar</h1>
+   </header>
+   <section>
+    <div id="contadores">
+        <label for="inicio">Inicio:</label>
+        <input type="number" name="inicio" id="inicio">
+        <br>
+        <label for="fim">Fim:</label>
+        <input type="number" name="fim" id="fim">
+        <br>
+        <label for="passo">Passo:</label>
+        <input type="number" name="passo" id="passo">
+        <br>
+        <input type="button" value="Contar" onclick="contar()">
+    </div>
+    <div id="res"> 
+        Preparando a contagem...
+    </div>
+   </section>
+   <footer>
+
+   </footer>
+   <script src="ex016.js"></script>
+</body>
+
+</html>
