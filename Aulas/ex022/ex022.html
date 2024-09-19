@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex022</title>
+    <style>
+        body{
+            background-color: rgb(116, 247, 247);
+
+        }
+
+        section{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px black;
+
+            width: 450px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 3em;
+        }
+
+        select{
+            margin-top: 20px;
+            width: 150px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div>
+            <label for="numeros">Número (entre 1 e 100):</label>
+            <input type="number" name="numeros" id="numeros">
+            <input type="button" value="Adicionar" id="adicionar" onclick="adicionar()">
+            <br>
+            <select name="select" id="select" size="10"></select>
+                
+            </select>
+            <br>
+            <input type="button" value="Finalizar">
+        </div>
+        <div>
+            
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="ex022.js"></script>
+</body>
+</html>
