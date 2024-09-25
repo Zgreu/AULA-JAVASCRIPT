@@ -8,3 +8,6 @@ let amigo = { nome:'joão',
 
 amigo.crescer(10)
 console.log(amigo.altura)
+
+let bomdia = aipai 
+
